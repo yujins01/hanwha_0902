@@ -99,6 +99,11 @@ def get_users():
 async def create_item(item: Item):
     return item
 ```
+#### Put 요청
+- 기존 데이터를 수정할 때 사용
+
+#### Delete 요청
+- 기존 데이터를 삭제할 때 사용
 
 #### 경로 Path
 
