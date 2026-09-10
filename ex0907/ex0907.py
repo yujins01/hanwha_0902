@@ -49,8 +49,8 @@ print(user.id)
 print(user.model_dump()) # pydantic 객체를 일반 Python 딕셔너리로 변환
 
 print(user.id)
-print(user.signup_ts)
-print(user.tastes)
+print(user.signup_ts) # 변환된 날짜/ 시간 확인
+print(user.tastes) #tastes 딕셔너리 확인
 
 external_data2 = {
   'id': 'not an int',

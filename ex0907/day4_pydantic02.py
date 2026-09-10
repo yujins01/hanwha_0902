@@ -8,10 +8,10 @@ class Address(BaseModel):
 
 class User(BaseModel):
     name: str
-    age: int = Field(ge=0, le=150)
+    age: int = Field(ge=0, le=150) #0이상 150이하 정수
     email: str
     address: Address
-    nickname: str|None = None
+    nickname: str|None = None #허용 되는 데이터 타입은 문자열이거나 None, 기본 값은 None
 
 user = User(
     name="Alice",
