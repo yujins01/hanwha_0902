@@ -1,0 +1,30 @@
+[project]
+name = "rag-two"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "yujins01", email = "neosyj01@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "faiss-cpu>=1.15.1",
+    "langchain>=1.4.2",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.3",
+    "langchain-openai>=1.6.2",
+    "langchain-text-splitters>=1.1.2",
+    "olefile>=0.47",
+    "pinecone>=10.0.0",
+    "pypdf>=6.19.0",
+    "scikit-learn>=1.9.1",
+    "sentence-transformers>=6.1.0",
+]
+
+[project.scripts]
+rag-two = "rag_two:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
